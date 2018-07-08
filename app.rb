@@ -32,7 +32,7 @@ class App < Sinatra::Base
     @words << params[:word4]
     @words << params[:word5]
 
-    @words.join(",")
+    @words.join(" ") + '.'
     @words
     binding.pry
   end
