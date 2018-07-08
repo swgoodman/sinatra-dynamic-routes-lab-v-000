@@ -26,12 +26,13 @@ class App < Sinatra::Base
   get "/say/:word1/:word2/:word3/:word4/:word5" do
     words = []
 
+    "hello"
+
     words < params[:word1]
     words < params[:word2]
     words < params[:word3]
     words < params[:word4]
     words < params[:word5]
-    "hello"
     binding.pry
 
   end
