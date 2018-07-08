@@ -43,7 +43,6 @@ class App < Sinatra::Base
 
     if @operation == "add"
       "#{@num1+@num2}"
-      binding.pry
     elsif @operation == "subtract"
       "#{@num1-@num2}"
     elsif @operation == "multiply"
