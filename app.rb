@@ -33,6 +33,7 @@ class App < Sinatra::Base
     words << params[:word5]
 
     words.join(",")
+    words
   end
 
 
