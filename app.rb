@@ -24,17 +24,18 @@ class App < Sinatra::Base
   end
 
   get "/say/:word1/:word2/:word3/:word4/:word5" do
-    @words = []
+    words = []
 
-    @words << params[:word1]
-    @words << params[:word2]
-    @words << params[:word3]
-    @words << params[:word4]
-    @words << params[:word5]
+    words << params[:word1]
+    words << params[:word2]
+    words << params[:word3]
+    words << params[:word4]
+    words << params[:word5]
 
-    @words.join(" ") + '.'
-    @words
-  
+    words.join(" ") + '.'
+    words
+    binding.pry
+
   end
 
 
