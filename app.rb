@@ -34,7 +34,7 @@ class App < Sinatra::Base
 
     @words.join(" ") + '.'
     @words
-    binding.pry
+  
   end
 
 
