@@ -36,5 +36,9 @@ class App < Sinatra::Base
     words.join(" ") + '.'
   end
 
+  get "/:operation/:number1/:number2" do
+    
+  end
+
 
 end
