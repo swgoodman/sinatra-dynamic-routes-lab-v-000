@@ -31,9 +31,9 @@ class App < Sinatra::Base
     words << params[:word3]
     words << params[:word4]
     words << params[:word5]
-
-    words.join(" ") + '.'
     words
+    words.join(" ") + '.'
+    
     binding.pry
 
   end
