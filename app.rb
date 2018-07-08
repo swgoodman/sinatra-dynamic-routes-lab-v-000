@@ -42,13 +42,13 @@ class App < Sinatra::Base
     @num2 = params[:number2]
 
     if @operation == "add"
-      "#{@num1+@num2}"
+      puts "#{@num1+@num2}"
     elsif @operation == "subtract"
-      "#{@num1-@num2}"
+      puts "#{@num1-@num2}"
     elsif @operation == "multiply"
-      "#{@num1*@num2}"
+      puts "#{@num1*@num2}"
     else @operation == "divide"
-      "#{@num1/@num2}"
+      puts "#{@num1/@num2}"
     end      
   end
 
